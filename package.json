@@ -8,5 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Edson Ferreira, Eduardo Scaranari, Erick Miglio, Sophia Wermann, Vivian Sanchez.",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.9.1"
+  }
 }
