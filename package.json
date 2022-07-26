@@ -1,0 +1,12 @@
+{
+  "name": "hackathon",
+  "version": "1.0.0",
+  "description": "Projeto de 'marketplace de trabalhadores informais' para apresentação no Hackathon da primeira turma do Tech Academy, da StartSe.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Edson Ferreira, Eduardo Scaranari, Erick Miglio, Sophia Wermann, Vivian Sanchez.",
+  "license": "ISC"
+}
