@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+html {
+    height: 100%;
+}
+
+/*-------------------Formatação header-----------------*/
+
+header#cabecalho {
+	background-color: #0f0f0f;
+    top: 0;
+    right: 0;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+header#cabecalho h1 {
+	font-family: 'Poppins';
+	font-size: 28pt;
+	color: #FFFFFF;
+	padding: 10px;
+	margin: auto;
+    position: absolute;
+    left: 0.5%;
+    top: 0%;
+}
+
+/*-------------------Formatação menu-----------------*/
+
+nav#menu {
+	display: block;
+    margin: 10px;
+}
+
+nav#menu ul{
+	list-style: none;
+	text-transform: uppercase;
+	position: relative;
+    left: 86rem;
+    top: 0vh;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #0f0f0f;
+    border-radius: 50px;
+    border: #0f0f0f solid 2px;
+	padding: 5px 15px;
+	margin: 2px;
+	transition: background-color 1s;
+}
+
+nav#menu li.botao {
+    background-color: #0066FF;
+}
+
+nav#menu li.botao:hover {
+    border: #FFFFFF solid 2px;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+}
+
+/*-------------------Formatação links-----------------*/
+
+a {
+	color: #111111;
+	text-decoration: none;	
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+/*-------------------Formatação corpo-----------------*/
+
+body {
+    background-color: #1E1E1E;
+    font-family: 'Poppins';
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*-------------------Formatação divs-----------------*/
+
+div#principal {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div#div-logo {
+    margin: 20vh;
+    padding: 0px;
+}
+
+div#div-pesquisa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#setor {
+    justify-content: left;
+    padding: 10px;
+    margin: 0px 20px 0 20px;
+}
+
+div#localizacao {
+    justify-content: left;
+    padding: 10px;
+    margin: 0px 20px 0 20px;
+}
+
+/*-------------------Formatação botão buscar-----------------*/
+
+button#buscar {
+    color: #FFFFFF;
+    border-radius: 50px;
+    background-color: #0066FF;
+    border: #0f0f0f solid 2px;
+	padding: 5px 15px;
+	margin: 2px;
+    cursor: pointer;
+}
+
+/*-------------------Formatação footer-----------------*/
+
+footer#rodape {
+	clear: both;
+	border-top: 1px #FFFFFF solid;
+	padding: 10 px;
+    background-color: #0066FF;
+    bottom: 0;
+    left: 0;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+
+}
+
+footer#rodape p {
+	text-align: center;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    margin: auto;
+    padding: 15px;
+}
