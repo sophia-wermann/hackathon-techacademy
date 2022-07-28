@@ -17,20 +17,106 @@ body {
     background-color: #222222;
 }
 
-/* aqui sibstituir header e logo pelo header que a sophia fez */
-#header {
+/* HEADER */
+
+/* section#interface {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    background-color: #1B1B1B;
-    font-size: 1.5rem;
-    margin-bottom: 5%;
+    height: 100%;
+    width: 100%;
+ } apagar */
+
+ header#cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	background-color: #0f0f0f;
+    top: 0;
+    right: 0;
+    height: auto;
+    position: fixed;
+    width: 100%;
 }
 
-.logo {
-    width: 10%;
+section#logomarca {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
-/* ate aqui */
+ section#logomarca img {
+    max-width: 25%;
+    height: auto;
+    padding: 1rem;
+}
+
+section.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav#menu {
+	display: block;
+    margin: 10px;
+}
+
+nav#menu ul{
+	list-style: disc;
+	text-transform: uppercase;
+}
+
+nav#menu li {
+	display: inline-block;
+	background-color: #0f0f0f;
+    border-radius: 50px;
+    border: #0f0f0f solid 2px;
+	padding: 0 10px;
+    font-size: 1.6rem;
+	transition: background-color 1s;
+}
+
+nav#menu li.botao {
+    background-color: #0066FF;
+}
+
+nav#menu li.botao:hover {
+    border: #FFFFFF solid 2px;
+}
+
+nav#menu li:hover {
+	background-color: #606060;
+}
+
+nav#menu a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav#menu a:hover {
+	color: #ffffff;
+}
+
+/* HEADER MOBILE */
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+/* BODY */
 
 .container {
     background-color: #2D2D2D;
@@ -39,24 +125,29 @@ body {
     margin: 0 auto;
     border-radius: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
-    /* max-height: 60vh; */
+    margin-top: 15vh;
 }
 
 h1 {
     font-size: 3rem;
     font-weight: 400;
     margin: 1rem 5rem;
+    width: fit-content;
 }
 
 #dados_pessoais_form {
     display: flex;
-    flex-direction: column;
-    /* flex-basis: 45%; */
+    justify-content: space-around;
     margin: 2rem 5rem;
 }
 
+.form_columns_container{
+    width: 100%;
+}
+
 label {
-    font-size: 2rem;    
+    font-size: 2rem; 
+    display: block;   
 }
 
 input {
@@ -64,7 +155,7 @@ input {
     border-style: none;
     padding: 1rem;
     font-size: 1.5rem;
-    width: 45%;
+    width: 90%;
     margin-bottom: 2rem;
     
 }
@@ -74,15 +165,15 @@ select {
     border-style: none;
     padding: 1rem;
     font-size: 1.5rem;
-    width: 45%;
+    width: 90%;
     margin-bottom: 2rem;
     
 }
 
 #sobre_voce {
     border-radius: 5px;
-    width: 45%;
-    height: 11em;
+    width: 90%;
+    height: 14.1em;
     font-size: 1.5rem;
     margin-bottom: 2rem;    
 }
@@ -93,6 +184,36 @@ select {
     display: flex;
     justify-content: space-between;
 }
+ 
+/* TESTES */
+/* .teste { 
+    justify-content: center;
+    width: 100px;
+    
+    margin-right: 69rem;
+    margin-top: 3rem;
+} */
+
+/* .div_teste {
+    display: flex;
+    justify-content: space-around;
+} */
+
+/* .div_teste h1 {
+    flex-basis: 50%;
+} */
+
+/* figure {
+    width: 15%;
+    display: inline-block;
+}
+figure > p {
+    font-size: 2rem;
+    text-align: center;
+    
+} */
+
+/* FIM TESTES */
 
 button {
     font-family: inherit;
@@ -108,7 +229,43 @@ button {
     margin: 20px 45px;
     padding: 15px;
     width: 10%;
+    box-sizing: border-box;
 }
+
+#botao_voltar:hover, #botao_enviar:hover {
+    border: #FFFFFF solid 2px;
+    padding: calc(15px - 2px);
+}
+
+/* FOOTER */
+
+footer#rodape {
+	border-top: 1px #FFFFFF solid;
+    background-color: #0066FF;
+    margin-top: 8.2rem; 
+    height: fit-content;
+}
+
+footer#rodape p {
+	text-align: center;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+footer#rodape a {
+    color: #111111;
+	text-decoration: none;
+}
+
+footer#rodape a:hover{
+    text-decoration: underline;
+}
+
+/* MEDIA QUERY */
 
 @media only screen and (max-width: 1200px) {
     #dados_pessoais_form {
@@ -136,9 +293,42 @@ button {
         width: 45%;
         margin: 10px 0;
     }
+
+    /* HEADER MOBILE */
+    .toggle-button {
+        display: flex;
+    }
+
+    section.navbar {
+        /* width: 100%; */
+        display: none;
+    }
+
+    header#cabecalho {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+ 
+    #menu ul {
+       width: 100%;
+        flex-direction: column;
+    }
+
+    #menu li {
+        text-align: center;
+    }
+
+    section.navbar.active {
+        display: flex;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
+    /* .revert_container {
+        flex-direction: column-reverse;
+    } */
+    
     .container_button {
         flex-direction: column-reverse;
         justify-content: center;
@@ -150,4 +340,12 @@ button {
     }
 }
 
-/* como faz pra ir pro lado? flexwrap n ta indo n sei pq */
+@media only screen and (max-width: 1201px) {
+    #dados_pessoais_form {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* a ideia do 1201 é q a partir dai as divs vao uma pra baixo da outra...
+mas n ta rolando n sei pq */
