@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: #222222;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+    font-size: 1.5rem;
+    background-color: #1B1B1B;
+    border: none;
+    color: #FFFFFF;
+    cursor: pointer;
+    font: 300;
+    font-style: bold;
+    width: 30%;
+}
+
+input {
+    font-family: inherit;
+    border: none;
+    width: 90%;
+    text-align: left;
+    padding-left: 10px;
+}
+
+/* aqui sibstituir header e logo pelo header que a sophia fez */
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #1B1B1B;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.logo {
+    width: 10%;
+}
+
+/* até aqui */
+
+.container {
+    background-color: #2D2D2D;
+    border: 1px solid #0066FF;
+    width: 25%;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.9);
+}
+
+#login-info {    
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+#login-info > * {
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#login-info > p{
+    font-size: 3rem;
+    color: #A5A5A5;
+    text-align: center;
+}
+/* ps poderia colocar isso no body e retirar isso e o #create-login > p ? ver */
+
+#login-info > a {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 200;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+#login-info > hr {
+    height: 0;
+    width: 70%;
+    justify-content: center;
+    box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.8);
+}
+
+#create-login {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#create-login > * {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+#create-login > p {
+    font-size: 3rem;
+    color: #A5A5A5;
+    text-align: center;
+}
+
+/* media query pra trocar tamanho do card (mais do q 30%!)  */
+@media only screen and (max-width: 1440px) {
+    .container {
+        width: 40%;
+    }
+}
+ @media only screen and (max-width: 830px) {   
+    .container {
+        width: 90%;
+    }
+ }
+
+ /* sera q precisa de dois media querys? se sim sera q ta bom assim? perguntar */

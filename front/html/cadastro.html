@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados Cadastrais</title>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+<body>
+    <header id="header">
+        <img src="../img/logo_1.png" alt="logo" class="logo">
+    </header>
+    <main>
+        <section class="container">
+            <h1>Dados Cadastrais</h1>
+            <form id="dados_pessoais_form">
+                <label for="nome">Nome</label> <br> <!--sera q uso br p quebrar cada linha abaixo???-->
+                <input required id="nome" name="nome" type="text">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option hidden disabled selected value="">-- Escolha um Estado --</option> 
+                    <option value="">AC</option>
+                    <option value="">AL</option>
+                    <option value="">AP</option>
+                    <option value="">AM</option>
+                    <option value="">BA</option>
+                    <option value="">CE</option>
+                    <option value="">DF</option>
+                    <option value="">ES</option>
+                    <option value="">GO</option>
+                    <option value="">MA</option>
+                    <option value="">MT</option>
+                    <option value="">MS</option>
+                    <option value="">MG</option>
+                    <option value="">PA</option>
+                    <option value="">PB</option>
+                    <option value="">PR</option>
+                    <option value="">PE</option>
+                    <option value="">PI</option>
+                    <option value="">RJ</option>
+                    <option value="">RN</option>
+                    <option value="">RS</option>
+                    <option value="">RO</option>
+                    <option value="">RR</option>
+                    <option value="">SC</option>
+                    <option value="">SP</option>
+                    <option value="">SE</option>
+                    <option value="">TO</option>
+                </select>
+                <label for="cidade">Cidade</label>
+                <input required id="cidade" name="cidade" type="text">
+                <label for="bairro">Bairro</label>
+                <input required id="bairro" name="bairro" type="text">
+                <label for="senha">Cadastre uma senha de acesso</label>
+                <input required id="senha" name="senha" type="password">
+                <label for="profissao_atividade">Profissão/Atividade</label>
+                <input required id="profissao_atividade" name="profissao_atividade" type="text">
+                <label for="sobre_voce">Fale sobre você</label>
+                <textarea required id="sobre_voce" name="sobre_voce" > </textarea>
+                <label for="repete_senha">Repita sua senha</label>
+                <input required id="repete_senha" name="repete_senha" type="password">
+            </form>
+        </section>
+        <section class="container_button">
+            <button id="botao_voltar" onclick="">Voltar</button>      <!--ver o que fazer aqui-->
+            <button type="submit" form="dados_pessoais_form" name="enviar_dados" class="enviar_dados_btn">Enviar</button>
+        </section>
+    </main>
+</body>
+</html>
+
+
+
+ 
+
+
+    
