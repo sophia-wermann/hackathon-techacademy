@@ -47,10 +47,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-end;
 }
 
 #dados_pessoais_form input {
-    width: 90%;
+    width: 94%;
 }
 
 h1 {
@@ -116,51 +117,8 @@ button, .container_button > a {
 }
 
 main {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     max-width: 1200px;
     padding-top: 12px;
 }
-
-@media only screen and (max-width: 1200px) {
-    #dados_pessoais_form {
-        margin: 2rem;    
-    }
-
-    input {
-        width: 100%;
-    }
-
-    select {
-        width: 100%;
-    }
-
-    #sobre_voce {
-        width: 100%;
-    }
-
-    .container_button {
-        justify-content: space-around;
-        
-    }
-
-    button {
-        width: 45%;
-        margin: 10px 0;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .container_button {
-        flex-direction: column-reverse;
-        justify-content: center;
-    }
-
-    button {
-        width: 100%;
-        margin: 10px 0;
-    }
-}
-
-/* como faz pra ir pro lado? flexwrap n ta indo n sei pq */
