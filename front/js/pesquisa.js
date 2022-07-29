@@ -2,6 +2,7 @@
 // FIREBASE CONFIG
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-app.js";
+import { readTextFile } from './jsonHelper.js'
 
 import {
   getDatabase,
@@ -27,6 +28,16 @@ const filtroAtividade = document.getElementById('busca');
 const filtroEstado = document.getElementById('estado');
 const filtroCidade = document.getElementById('cidade');
 const article = document.getElementById('cardsArticle');
+let listaEstados = '';
+
+readTextFile('../../model/estados.json', function (text) {
+  listaEstados = JSON.parse(text);
+
+  for (let estado of listaEstados) {
+    filtroEstado.innerHTML = 
+      `${filtroEstado.innerHTML}<option value='${estado.sigla}'>${estado.sigla}</option>`
+  }
+});
 
 botaoBuscar.addEventListener("click", () => {
   const anunciantes = ref(database, 'users');

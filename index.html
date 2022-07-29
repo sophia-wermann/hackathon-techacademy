@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contrate-me - Pesquise serviços em sua região</title>
-    <link rel="stylesheet" href="./front/css/index.css" />
+    <!-- <link rel="stylesheet" href="./front/css/index.css" /> -->
+    <link rel="stylesheet" href="./front/css/pesquisa.css" />
     <link rel="shortcut icon" href="./front/imagens/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
-    <div id="interface">
+    <header id="navbar">
         <header id="cabecalho">
             <section id="logomarca">
                 <h1>Contrate-me</h1>
@@ -21,42 +22,31 @@
                 <nav id="menu">
                     <ul type="disc">
                         <!-- <li><a href="index.html">Home</a></li> -->
-                        <li><a href="mural.html">Pesquisa</a></li>
+                        <li><a href="./front/html/pesquisa.html">Pesquisa</a></li>
                         <li><a href="equipe.html">Sobre nós</a></li>
                         <li class="botao"><a href="login.html">Quero anunciar</a></li>
                     </ul>
                 </nav>
             </section>
         </header>
+    </header>
 
-        <div id="principal">
-            <div id="div-logo">
-                <img src="./front/imagens/logo.png" />
-            </div>
-            <div id="div-pesquisa">
-                <div id="setor">
-                    <h3>O que você procura?</h3>
-                    <input />
-                </div>
-                <div id="localizacao">
-                    <h3>Filtre por localização:</h3>
-                    <select id="estado">
-                        <option hidden disabled selected value="">-- Escolha um Estado --</option> 
-                    </select>
-                </div>
-            </div>
-            <div id="botao-pesquisar">
-                <button id="buscar" class="botao">Buscar</button>
-            </div>
+    <main class="homepage">
+        <div id="div-logo">
+            <img src="./front/imagens/logo.png" />
         </div>
+        <div id="botao-pesquisar">
+            <a href="./front/html/pesquisa.html" id="buscar" class="botao">Pesquise por serviços agora</a>
+        </div>
+    </main>
 
-        <footer id="rodape">
-            <p>Copyright &copy; 2022 - Hackathon Tech Academy <br />
-                <a href="https://github.com/sophia-wermann/hackathon-techacademy" target="_blank">Repositório do
-                    projeto</a> | <a href="./front/html/equipe.html">Sobre nós</a>
-            </p>
-        </footer>
-    </div>
+    <footer id="rodape">
+        <p>Copyright &copy; 2022 - Hackathon Tech Academy</p>
+        <p>
+            <a href="https://github.com/sophia-wermann/hackathon-techacademy" target="_blank">Repositório do
+                projeto</a> | <a href="./front/html/equipe.html">Sobre nós</a>
+        </p>
+    </footer>
 </body>
 
 </html>

@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contrate-me - Pesquise serviços na sua região.</title>
+    <title>Contrate-me - Pesquise serviços em sua região</title>
     <link rel="stylesheet" href="../css/pesquisa.css" />
+    <link rel="shortcut icon" href="../imagens/favicon.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                 <nav id="menu">
                     <ul type="disc">
                         <!-- <li><a href="index.html">Home</a></li> -->
-                        <li><a href="mural.html">Pesquisa</a></li>
+                        <li><a href="../../index.html">Home</a></li>
                         <li><a href="equipe.html">Sobre nós</a></li>
                         <li class="botao"><a href="login.html">Quero anunciar</a></li>
                     </ul>
@@ -34,12 +35,12 @@
                 <p>Buscar por:</p>
                 <input class="itemFiltragem" type="text" id="busca" placeholder="Desenvolvedor Fullstack">
             </div>
-            <div class="filtro" id="filtroCategoria">
+            <!-- <div class="filtro" id="filtroCategoria">
                 <p>Categoria:</p>
                 <select class="itemFiltragem" name="categoria" id="categoria">
                     <option hidden disabled selected value=""></option>
                 </select>
-            </div>
+            </div> -->
             <div class="filtro" id="filtroEstado">
                 <p>Estado:</p>
                 <select class="itemFiltragem" name="estado" id="estado">
@@ -48,9 +49,10 @@
             </div>
             <div class="filtro" id="filtroCidade">
                 <p>Cidade:</p>
-                <select class="itemFiltragem" name="cidade" id="cidade">
+                <!-- <select class="itemFiltragem" name="cidade" id="cidade">
                     <option hidden disabled selected value=""></option>
-                </select>
+                </select> -->
+                <input class="itemFiltragem" type="text" id="cidade" placeholder="Goiânia">
             </div>
             <div class="filtro" id="botaoBuscar">
                 <input type="button" id="botaoBuscar" value="Buscar">
