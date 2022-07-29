@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados Cadastrais</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../imagens/logo.png">
     <link rel="stylesheet" href="../css/cadastro.css">
     <link rel="stylesheet" href="../css/header.css">
 </head>
@@ -48,6 +48,8 @@
                     <input required id="profissao_atividade" name="profissao_atividade" type="text">
                 </div>
                 <div id="right-form">
+                    <p><label for="telefone">Insira um número para contato</label></p>
+                    <input required id="telefone" name="telefone" type="text">
                     <p><label for="senha">Cadastre uma senha de acesso</label></p>
                     <input required id="senha" name="senha" type="password">
                     <p><label for="repete_senha">Repita sua senha</label></p>
@@ -57,10 +59,10 @@
         </section>
         <section class="container_button">
             <a href="../../index.html" id="botao_voltar" type="button" onclick="">Voltar</a>
-            <button type="submit" form="dados_pessoais_form" name="enviar_dados"
-                class="enviar_dados_btn">Enviar</button>
+            <button name="enviar_dados" class="enviar_dados_btn" id="botaoEnviar">Enviar</button>
         </section>
     </main>
+    <script type="module" src="../js/cadastro.js"></script>
 </body>
 
 </html>
