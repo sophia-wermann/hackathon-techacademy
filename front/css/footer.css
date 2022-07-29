@@ -18,3 +18,7 @@ footer#rodape p {
     padding-bottom: 5px;
     font-size: 12px;
 }
+
+footer a {
+    color: #0066FF;
+}
