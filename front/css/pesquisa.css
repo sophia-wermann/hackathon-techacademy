@@ -1,0 +1,241 @@
+/* -------- HTML, BODY -------- */
+
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+html {
+    height: 100%;
+    width: auto;
+}
+
+body {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+    height: 100%;
+}
+
+
+/* -------- HEADER, NAVBAR -------- */
+
+header#navbar {
+    background-color: #111111;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 12px;
+}
+
+header#cabecalho {
+    box-sizing: border-box;
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+    max-width: 1200px;
+}
+
+section#logomarca {
+    display: flex;
+    align-items: center;
+    color: white;
+    height: fit-content;
+}
+
+section#logomarca h1 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+section#navbar {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+}
+
+nav#menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+}
+
+nav#menu li {
+    padding: 2px 12px;
+    margin: 2px 4px;
+    list-style-type: none;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: background-color 0.4s;
+}
+
+li.botao {
+    background-color: #0066FF;
+    text-transform: uppercase;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: white;
+}
+
+nav#menu li:hover, #botaoBuscar:hover {
+	background-color: #606060;
+    cursor: pointer;
+}
+
+
+/* -------- MAIN -------- */
+
+main {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    justify-self: start;
+    margin: 20px 0;
+}
+
+
+/* ## HEADER ## */
+
+header#filtragem {
+    border-bottom: 1px solid rgb(50, 50, 50);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    color: rgb(180, 180, 180);
+    font-weight: 200;
+    padding-bottom: 20px;
+}
+
+.itemFiltragem {
+    max-width: 200px;
+    margin-right: 20px;
+}
+
+#estado {
+    width: 60px;
+}
+
+#cidade {
+    min-width: 140px;
+}
+
+#categoria {
+    min-width: 200px;
+}
+
+div.filtro p {
+    margin: 0;
+}
+
+#botaoBuscar {
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 0 12px;
+    background-color: #0066FF;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 400;
+    transition: background-color 0.4s;
+}
+
+
+/* ## ARTICLE ## */
+
+#cardsArticle {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    max-height: 80%;
+    overflow-y: auto;
+    padding-top: 16px;
+}
+
+.cardAnunciante {
+    box-sizing: border-box;
+    background-image: url('../imagens/cardbg.jpg');
+    background-size: cover;
+    border-radius: 12px 12px 0 0;
+    margin: 8px;
+    height: 240px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.legenda {
+    background-color: #11111199;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.legenda p {
+    margin: 0;
+    color: white;
+}
+
+.nomeAnunciante {
+    font-size: 24px;
+}
+
+.nomeAnunciante, .atividade, .localizacao {
+    padding-left: 10px;
+}
+
+.nomeAnunciante, .atividade {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    max-width: 90%;
+}
+
+.atividade, .localizacao, .telefone {
+    font-size: 16px;
+}
+
+.localizacao {
+    max-width: 120%;
+}
+
+.telefone {
+    justify-self: flex-end;
+    padding-right: 10px;
+    text-align: end;
+}
+
+/* -------- FOOTER -------- */
+
+footer#rodape {
+    height: auto;
+    width: 100%;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer#rodape p {
+	text-align: center;
+    color: #FFFFFF;
+    font-family: 'Poppins';
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 12px;
+}
