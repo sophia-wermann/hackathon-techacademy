@@ -32,12 +32,13 @@ const database = getDatabase(firebaseApp);
 // LOG IN WITH EMAIL AND PASSWORD
 
 const loginEmailPassword = async () => {
-    const email = 'dev.edusc@gmail.com';
-    const pwd = 'password';
+    const email = txtEmail.value;
+    const pwd = txtPwd.value;
 
     try {
         const userCredential = await signInWithEmailAndPassword(auth, email, pwd);
         console.log(userCredential.user);
+        window.location.assign('../html/cadastro.html');
     } catch (error) {
         switch (error.code) {
             case 'auth/user-not-found': alert('Usuário não cadastrado'); break;
@@ -83,10 +84,18 @@ const createAccountEmailPassword = async () => {
 // HTML ELEMENTS ASSIGNMENTS
 
 const botaoCadastrar = document.getElementById('cadastrar');
-const botaoLogar = document.getElementById('logar');
+const botaoEntrar = document.getElementById('botaoEntrar');
+const txtEmail = document.getElementById('txtEmail');
+const txtPwd = document.getElementById('txtPassword');
 
 // ====================================================================
 // LISTENERS
 
-botaoCadastrar.addEventListener("click", createAccountEmailPassword);
-botaoLogar.addEventListener("click", loginEmailPassword);
+botaoCadastrar.addEventListener("click", () => {
+    window.location.assign('../html/cadastro.html');
+});
+botaoEntrar.addEventListener("click", loginEmailPassword);
+
+// if (auth !== 0) {
+//     window.location.assign('../html/cadastro.html');
+// }

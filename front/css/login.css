@@ -9,11 +9,17 @@
 html {
     font-size: 10px;
     font-family: 'Poppins', sans-serif, 'Times New Roman', Times, serif;
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
     background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
 }
 
 a {
@@ -66,8 +72,8 @@ input {
 }
 
 #login-info {    
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 
 #login-info > * {
@@ -102,8 +108,8 @@ input {
 }
 
 #create-login {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    /* padding-top: 30px; */
+    padding-bottom: 20px;
 }
 
 #create-login > * {

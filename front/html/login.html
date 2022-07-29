@@ -5,30 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../imagens/favicon.png">
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
-    <header id="header">
-        <img src="../img/logo_1.png" alt="logo" class="logo">
-        <p><a href="">Contate-nos</a></p>
+    <header id="navbar">
+        <header id="cabecalho">
+            <section id="logomarca">
+                <h1>Contrate-me</h1>
+            </section>
+
+            <section id="navbar">
+                <nav id="menu">
+                    <ul type="disc">
+                        <!-- <li><a href="index.html">Home</a></li> -->
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="equipe.html">Sobre nós</a></li>
+                        <li class="botao"><a href="./login.html">Quero anunciar</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
     </header>
+    
     <main class="container">
         <section id="login-info">
             <p>Entre</p>
-            <input type="email" placeholder="E-mail">
-            <input type="password" placeholder="Senha">
-            <button>ENTRAR</button>
+            <input id="txtEmail" type="email" placeholder="E-mail">
+            <input id="txtPassword" type="password" placeholder="Senha">
+            <button id="botaoEntrar">ENTRAR</button>
             <a href="">Esqueci minha senha</a>
             <hr>
         </section>
         
         <section id="create-login">
-            <p>Cadastre-se</p>
-            <input type="email" placeholder="E-mail">
+            <!-- <p>Cadastre-se</p> -->
+            <!-- <input type="email" placeholder="E-mail"> -->
             <!-- <input type="password" placeholder="Senha"> -->
-            <button>CADASTRAR</button>
+            <button id="cadastrar">CADASTRE-SE</button>
         </section>
     </main>
+
+    <footer id="rodape">
+        <p>Copyright &copy; 2022 - Hackathon Tech Academy <br />
+            <a href="https://github.com/sophia-wermann/hackathon-techacademy" target="_blank">Repositório do
+                projeto</a> | <a href="./front/html/equipe.html">Sobre nós</a>
+        </p>
+    </footer>
+    <script type="module" src="../js/fbaseEmailPwd.js"></script>
 </body>
 </html>

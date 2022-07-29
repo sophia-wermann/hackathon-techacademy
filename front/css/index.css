@@ -1,170 +1,46 @@
+/* -------- HTML, BODY -------- */
+
 @import url(https://fonts.googleapis.com/css?family=Poppins);
 
-html, body {
+html {
     height: 100%;
+    width: auto;
 }
 
 body {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    font-family: 'Poppins';
+    height: 100%;
+}
+
+
+/* -------- HOMEPAGE MAIN -------- */
+
+main.homepage {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    background: #1e1e1e;
-    margin: 0;
-    font-family: 'Poppins';
 }
 
-div#interface {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
-}
+main #buscar {
+    text-decoration: none;
 
-/*-------------------Formatação header-----------------*/
 
-header#cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-	background-color: #0f0f0f;
-    top: 0;
-    right: 0;
-    height: auto;
-    position: fixed;
-    width: 100%;
-}
 
-section#logomarca {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-}
-
-section#logomarca h1 {
-    margin: 0;
-    font-size: 16px;
     color: white;
-}
-
-section#navbar ul {
-    margin: 0;
-}
-
-nav#menu {
-	display: block;
-    margin: 10px;
-}
-
-nav#menu ul{
-	list-style: disc;
-	text-transform: uppercase;
-}
-
-nav#menu li {
-	display: inline-block;
-	background-color: #0f0f0f;
-    border-radius: 50px;
-    border: #0f0f0f solid 2px;
-	padding: 0 10px;
-	transition: background-color 1s;
-}
-
-nav#menu li.botao {
     background-color: #0066FF;
+    padding: 4px 24px;
+    border-radius: 50px;
+    transition: background-color 0.4s;
 }
 
-nav#menu li.botao:hover {
-    border: #FFFFFF solid 2px;
-}
-
-nav#menu li:hover {
+main #buscar:hover {
 	background-color: #606060;
-}
-
-nav#menu a {
-	color: #ffffff;
-	text-decoration: none;
-}
-
-nav#menu a:hover {
-	color: #ffffff;
-}
-
-/*-------------------Formatação links-----------------*/
-
-a {
-	color: #111111;
-	text-decoration: none;	
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
-/*-------------------Formatação divs-----------------*/
-
-div#principal {
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-    color: #FFFFFF;
-    text-align: center;
-}
-
-div#div-logo {
-    border: 1px solid red;
-    margin-top: 100px;
-    padding: 0px;
-}
-
-div#div-pesquisa {
-    border: 1px solid blue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-div#setor {
-    justify-content: left;
-    padding: 10px;
-    margin: 0px 20px 0 20px;
-}
-
-div#localizacao {
-    justify-content: left;
-    padding: 10px;
-    margin: 0px 20px 0 20px;
-}
-
-/*-------------------Formatação botão buscar-----------------*/
-
-button#buscar {
-    color: #FFFFFF;
-    border-radius: 50px;
-    background-color: #0066FF;
-    border: #0f0f0f solid 2px;
-	padding: 5px 15px;
-	margin: 2px;
     cursor: pointer;
-}
-
-/*-------------------Formatação footer-----------------*/
-
-footer#rodape {
-	border-top: 1px #FFFFFF solid;
-    background-color: #0066FF;
-    height: auto;
-}
-
-footer#rodape p {
-	text-align: center;
-    color: #FFFFFF;
-    font-family: 'Poppins';
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 5px;
 }

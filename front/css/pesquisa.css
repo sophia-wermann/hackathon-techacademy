@@ -11,84 +11,11 @@ body {
     background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     margin: 0;
     font-family: 'Poppins';
     height: 100%;
-}
-
-
-/* -------- HEADER, NAVBAR -------- */
-
-header#navbar {
-    background-color: #111111;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-top: 12px;
-}
-
-header#cabecalho {
-    box-sizing: border-box;
-    height: fit-content;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 12px;
-    max-width: 1200px;
-}
-
-section#logomarca {
-    display: flex;
-    align-items: center;
-    color: white;
-    height: fit-content;
-}
-
-section#logomarca h1 {
-    font-weight: 400;
-    font-size: 16px;
-    margin: 5px 0;
-}
-
-section#navbar {
-    display: flex;
-    align-items: center;
-    height: fit-content;
-}
-
-nav#menu ul {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0;
-    padding: 0;
-}
-
-nav#menu li {
-    padding: 2px 12px;
-    margin: 2px 4px;
-    list-style-type: none;
-    font-size: 14px;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.4s;
-}
-
-li.botao {
-    background-color: #0066FF;
-    text-transform: uppercase;
-}
-
-nav#menu a {
-    text-decoration: none;
-    color: white;
-}
-
-nav#menu li:hover, #botaoBuscar:hover {
-	background-color: #606060;
-    cursor: pointer;
 }
 
 
@@ -223,50 +150,4 @@ div.filtro p {
     justify-self: flex-end;
     padding-right: 10px;
     text-align: end;
-}
-
-
-/* -------- FOOTER -------- */
-
-footer#rodape {
-    height: auto;
-    width: 100%;
-    padding-bottom: 4px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-footer#rodape p {
-	text-align: center;
-    color: #FFFFFF;
-    font-family: 'Poppins';
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    font-size: 12px;
-}
-
-
-/* -------- HOMEPAGE MAIN -------- */
-
-main.homepage {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-main #buscar {
-    text-decoration: none;
-    color: white;
-    background-color: #0066FF;
-    padding: 4px 24px;
-    border-radius: 50px;
-    transition: background-color 0.4s;
-}
-
-main #buscar:hover {
-	background-color: #606060;
-    cursor: pointer;
 }
