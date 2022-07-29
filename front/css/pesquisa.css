@@ -202,7 +202,12 @@ div.filtro p {
 .nomeAnunciante, .atividade {
     grid-column-start: 1;
     grid-column-end: 3;
-    max-width: 90%;
+    max-width: 95%;
+}
+
+.atividade {
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .atividade, .localizacao, .telefone {
